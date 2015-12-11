@@ -1,0 +1,27 @@
+{
+  "name": "bower2webjar",
+  "version": "0.1.0",
+  "description": "Convert a bower.json file into a maven ready webjar project",
+  "main": "bower2webjar.js",
+  "bin": {
+    "bower2webjar": "./bower2webjar.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bower",
+    "webjar",
+    "converter",
+    "code",
+    "generator",
+    "maven"
+  ],
+  "author": "Chevdor",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.67.0",
+    "stdio": "^0.2.7"
+  }
+}

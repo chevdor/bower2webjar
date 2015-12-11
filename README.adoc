@@ -1,0 +1,42 @@
+# bower2webjar
+chevdor, 0.1.0
+
+This command line utility facilitates the generation of the files used by maven to create a webjar.
+It has been initially made to help with the creation of webjars for Polymer.
+
+WARNING: The current version works nice when the wind blows right and there are still some issues on the way. See https://github.com/chevdor/bower2webjar/issues for details.
+
+## Install
+ npm install -g bower2webjar
+
+
+## Usage 
+
+### Help
+
+ bower2webjar --help
+
+
+
+### Listing dependencies
+
+Using the ``-l`` flag, you may get a list of the dependencies.
+
+ bower2webjar -r PolymerElements/iron-elements -l
+
+
+
+### POM generation
+First go to a folder of your choice. You need to know the GitHub repository where your bower.json file is hosted.
+
+Issue the following command:
+ bower2webjar -r PolymerElements/iron-elements
+
+A new folder will be created with the files you need.
+
+Build your webjar using maven:
+ mvn clean package
+
+NOTE: If you don´t like the default groupId, check out the available options, you can provide your own.
+
+NOTE: By default, this utility comes with a template that may not match what you want. Use the -t flag pointing to your template if you wish something different.
