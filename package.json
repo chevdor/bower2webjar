@@ -1,6 +1,6 @@
 {
   "name": "bower2webjar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert a bower.json file into a maven ready webjar project",
   "main": "bower2webjar.js",
   "bin": {
